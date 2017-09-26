@@ -1,64 +1,66 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en-us">
+
 <head>
-	<title>Contact</title>
-	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <meta charset="UTF-8">
+  <title>Contact | Tony Kuang</title>
+  <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 
 <body>
-		<section>
-			<h1>Tony Kuang</h1>
-			<div class="nav">
-				<a href="index.html">
-				<h3 id="about">About</h3>
-				</a>
-				<a href="portfolio.html">
-				<h3 id="portfolio">Portfolio</h3>
-				</a>
-				<a href="contact.html">
-				<h3 id="contact">Contact</h3>
-				</a>
-			</div>
-		</section>
 
-		<div class="container">	
-	  		<h2>Contact</h2>
-	  		<hr align="center" width="600px">
-	  		<form>
-			    <h3>Name</h3>
-			    <input type="text" placeholder="John Smith">
+  <header id="masthead">
+    <div class="container">
+      <a href="index.html" id="logo">Tony Kuang</a>
+      <nav>
+        <a href="index.html">About</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
 
-			    <h3>Email</h3>
-				<input type="text" placeholder="johnsmith@gmail.com">
+  <div id="main-container" class="container">
+    <section class="main-section">
+      <h1>Contact</h1>
 
-			    <h3>Country</h3>
-			    <select>
-				    <option>Australia</option>
-				    <option>Canada</option>
-				    <option>USA</option>
-			    </select>
+      <form id="contact-form">
+        <ul>
+          <li>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="John Smith" required="required">
+          </li>
+          <li>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="example@gmail.com" required="required">
+          </li>
+          <li>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required="required"></textarea>
+          </li>
+        </ul>
+        <input type="submit">
+      </form>
 
-			    <h3>Message</h3>
-			    <textarea style="height:100px"></textarea>
-			    <input type="submit" value="Submit">
-			</form>
-		</div>
+    </section>
 
-		<div class="connect">
-				<h2>Connect with Me</h2>
-				<hr align="center" width="350px">
-				<a href="https://github.com/tonyjkuang" target="_blank">
-					<img id="github" src="assets/images/Github.png" alt="Github">
-				</a>
-				<a href="https://www.linkedin.com/in/tonyjkuang/" target="_blank">
-					<img id="linkedin" src="assets/images/LinkedIn.png" alt="LinkedIn">
-				</a>
-				<a href="https://www.facebook.com/jianze.kuang" target="_blank">
-					<img id="facebook" src="assets/images/Facebook.ico" alt="Facebook">
-				</a>
-		</div>
+    <section class="sidebar">
+      <div id="connect">
+        <h2>Connect with Me</h2>
 
-		<footer>@Copyright 2017 Tony Kuang</footer>
+        <a href="https://github.com/tonyjkuang"><img src="assets/images/Github.png" class="social" alt="GitHub" /></a>
+        <a href="https://www.linkedin.com/in/tonyjkuang/"><img src="assets/images/LinkedIn.png" class="social" alt="LinkedIn" /></a>
+        <a href="https://www.facebook.com/jianze.kuang"><img src="assets/images/Facebook.ico" class="social" alt="Facebook" /></a>
+      </div>
+    </section>
+  </div>
 
+  <footer>
+    <div class="container">
+      Copyright &copy; 2017 Tony Kuang
+    </div>
+  </footer>
 </body>
+
 </html>
